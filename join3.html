@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uppercase - lowercase</title>
+</head>
+<body>
+<script>
+    var str = prompt("Enter a string: ");
+    var result = [];
+    for(let i = 0, l = str.length; i < l; i++) {
+        if (str[i] == str[i].toUpperCase()) {
+            result.push(str[i].toLowerCase());
+        } else {
+            result.push(str[i].toUpperCase());
+        }
+    }
+    document.write("The origin string is " + str + "<br>");
+    document.write("The string after changed is: "+ result.join(""));
+</script>
+</body>
+</html>
